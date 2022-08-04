@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bable gum</title>
+    <style>
+        article{
+            border: 2px solid red;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #get{
+            background-color: red;
+        }
+    </style>
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <section>
+
+        <article id="new-article">
+            <h3>article-1</h3>
+            <p class="author">author-1</p>
+            <p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum earum animi molestias asperiores quia? Cumque ut explicabo libero incidunt obcaecati neque voluptatem illum veniam totam cum. Aliquam, quam suscipit.</p>
+        </article>
+        <article>
+            <h3>article-2</h3>
+            <p class="author">author-2</p>
+            <p class="discription">Aliquam earum rerum corrupti! Amet nemo temporibus omnis similique possimus illum itaque earum cum dolor fugit! Ullam incidunt fuga corrupti sed reprehenderit reiciendis eligendi a. Eaque delectus animi sequi quia.</p>
+        </article>
+        <article>
+            <h3 id="get">article-3</h3>
+            <p class="author">author-3</p>
+            <p class="discription">Maxime sequi odio ea minima, aliquid exercitationem aperiam voluptatum deleniti, corporis porro non! Quod reiciendis quisquam voluptate, ab illo sint laborum ea, est deleniti totam veniam magnam numquam exercitationem dolorem.</p>
+        </article>
+
+
+
+    </section>
+    <script>
+              var authors = document.getElementsByClassName('author');
+        for(i= 0; i<authors.length; i++){
+            var element = authors[i];
+            element.style.backgroundColor = 'red';
+            element.style.margin = '20px';
+            console.log(element);
+
+        }
+  
+        document.querySelector('h3').setAttribute('title','it is h3 tag')
+        var article = document.getElementById('new-article');
+        var newParagarap = document.createElement('p');
+        newParagarap.innerHTML=('it is my frist javascript');
+        article.appendChild(newParagarap);
+
+    </script>
+
+    
+</body>
+</html>
