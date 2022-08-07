@@ -1,12 +1,36 @@
 body{
     padding: 100px;
 }
-.head{
-    text-align: center;
-    margin-top: 100px;
-}
+
+
 .submit-aria{
     border-radius: 10px;
     padding: 40px;
+    box-shadow: 5px 5px 10px gray;
+    margin-top: 50px;
     
+}
+#tranjection{
+    display: none;
+}
+.statas{
+    margin:0 20px;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+.deposit{
+    background-color: mediumblue;
+    
+
+}
+.withdraw{
+    background-color: chartreuse;
+    
+
+}
+.balance{
+    background-color: deeppink;
+    
+
 }
